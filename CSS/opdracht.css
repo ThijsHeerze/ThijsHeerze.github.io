@@ -4,32 +4,78 @@
   color: white;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
+/* Deze code wordt overal toegepast */
 
 body {
-  background-color: black;
+  background-color: #474a56;
 }
-/* body */
 
 header {
   width: 100%;
-  height: 100px;
-  background-color: black;
-  color: white;
-  box-shadow: 0px 15px #355c6b;
+  height: auto;
+  background-color: rgb(17, 17, 17);
+  color: #fff;
+  position: relative;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: black 3px solid;
-  border-style: outset;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
-/* header */
 
-header h2 {
-  display: flex;
-  justify-content: left;
+@media screen and (max-width: 500px) {
+  header {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
-/* header titel */
+
+.mijn_portfolio {
+  display: flex;
+  margin-left: 10px;
+  block-size: 2px #ff0000;
+  border-radius: 6px;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0 10px;
+}
+
+/* flex 1 zorgt voor de list rechts in de header komt te staan in plaats van links */
+nav ul {
+  flex: 1;
+  text-align: right;
+  padding-right: 40px;
+}
+
+/* Zorgt ervoor dat de list naast elkaar en niet onder elkaar komt te staan */
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+  transition-duration: 0.2;
+}
+
+nav ul li a:active {
+  color: #b91646;
+}
 
 .portfolio {
   width: 75%;
@@ -37,54 +83,90 @@ header h2 {
   margin: 10%;
   padding: 35px;
   border: black solid 2px;
-  box-shadow: 20px 20px 1px black;
   border-width: 5px;
   border-style: outset;
-  background-color: white;
+  background-color: rgb(17, 17, 17);
+  box-shadow: #b91646 6px 6px;
+  border-radius: 6px;
 }
 
-.profielfoto {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background-color: white url();
-}
-
-/* .pagina1,
-.pagina2,
-.pagina3 {
-  color: black;
-  text-decoration: none;
+.tekst_box {
+  margin-top: 30px;
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 15px;
-  cursor: pointer;
-  text-align: above;
-  text-decoration: none;
-  outline: none;
+  border-radius: 6px;
+  padding: 10px 30px;
+}
+
+.contact_me {
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 6px;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 30px;
+}
+
+.download_cv {
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 6px;
+  border: 2px solid black;
   color: black;
-  background-color: white;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #c32bad;
+  padding: 10px 30px;
+  background-color: #ff0000;
 }
 
-.pagina1,
-.pagina2,
-.pagina3:hover {
-  background-color: white;
+.contact_me:hover {
+  color: #ff0000;
+  border: 2px solid #ff0000;
 }
 
-.pagina1,
-.pagina2,
-.pagina3:active {
-  background-color: white;
-  /* box-shadow: 0 5px #7027a0; */
-/* transform: translateY(4px); */
-/* } */
+.download_cv:hover {
+  color: black;
+  border: 2px solid #ff0000;
+}
 
+.contact_me:active {
+  color: #b91646;
+  border: 2px solid #b91646;
+}
+
+.download_cv:active {
+  color: black;
+  border: 2px solid #b91646;
+  background-color: #b91646;
+}
+
+header h2 {
+  display: flex;
+  justify-content: left;
+}
+
+span.auto-input,
 h1 {
-  padding-bottom: 5px;
+  width: 500px;
+  height: auto;
+}
+
+.about_auto_input {
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.contact_auto_input {
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.auto-input {
+  color: #ff0000;
+}
+
+.profielfoto img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0) url(download.jpg);
 }
 
 h2 {
@@ -92,38 +174,45 @@ h2 {
   padding-right: 450px;
 }
 
-.witblok {
-  display: flex;
+span.auto-input {
   justify-content: center;
+  padding-top: 50px;
 }
 
 table {
   width: 75%;
   height: auto;
-  background-color: white;
+  background-color: rgb(17, 17, 17);
   border-width: 5px;
   border-style: outset;
   display: flex;
-  justify-content: center;
-  box-shadow: 10px 10px;
+  box-shadow: #b91646 4px 4px;
+  border-radius: 2px;
 }
 
 table,
 th,
+tr {
+  border: rgb(17, 17, 17) solid;
+  color: #ff0000;
+}
+
+.tabel,
+table,
+th,
 tr,
 td {
-  border: #3d4453 solid;
-  border-radius: 12px;
+  margin-left: 100px;
+  padding: 4px;
 }
 
 footer {
   width: 99%;
   height: 100px;
   width: 100%;
-  background-color: white;
-  color: white;
+  background-color: rgb(17, 17, 17);
+  color: #fff;
   text-align: center;
-  box-shadow: 20px 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -135,42 +224,22 @@ footer {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  transition-duration: 1;
+  transition-duration: 0.8;
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   text-align: center;
   border-style: outset;
 }
 
-.pagina1,
-.pagina2,
-.pagina3 {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: white;
-  background-color: black;
-  border: none;
-  box-shadow: 0 9px #1db9c3;
+.backtotop:hover {
+  background-color: #ff0000;
+  color: black;
 }
 
-.pagina1,
-.pagina2,
-.pagina3:hover {
-  background-color: black;
-}
-
-.pagina1,
-.pagina2,
-.pagina3:active {
-  background-color: black;
-  box-shadow: 0 5px #2593be;
-  transform: translateY(4px);
+.backtotop:active {
+  background-color: #b91646;
+  color: black;
 }

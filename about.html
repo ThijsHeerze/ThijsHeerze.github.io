@@ -3,6 +3,7 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="CSS/opdracht.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,14 +11,27 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <a class="pagina1" href="index.html">Home</a>
-      <a class="pagina2" href="about.html">About Me</a>
-      <a class="pagina3" href="contact.html">Contact</a>
+    <header id="top">
+      <a href="#top"><div class="backtotop">^</div></a>
+      <nav>
+        <h1 class="mijn_portfolio">Mijn portfolio</h1>
+        <ul>
+          <li><a class="pagina1" href="index.html">Home</a></li>
+          <li><a class="pagina2" href="about.html">About Me</a></li>
+          <li><a class="pagina3" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <div class="portfolio">About</div>
-    <a href="index.html"><button>About Me</button></a>
-    <a href="contact.html"><button>Contact</button></a>
-    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: ["About me"],
+        typeSpeed: 100,
+        backSpeed: 200,
+        loop: false,
+      });
+    </script>
   </body>
+  <footer></footer>
 </html>
