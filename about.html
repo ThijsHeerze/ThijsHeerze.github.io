@@ -10,15 +10,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <header>
-      <a class="pagina1" href="index.html">Home</a>
-      <a class="pagina2" href="about.html">About Me</a>
-      <a class="pagina3" href="contact.html">Contact</a>
+  <body class="about_background">
+    <header id="top">
+      <a href="#top"><div class="backtotop">^</div></a>
+      <nav>
+        <h1 class="mijn_portfolio">About</h1>
+        <ul>
+          <li><a class="pagina1" href="index.html">Home</a></li>
+          <li><a class="pagina2" href="about.html">About</a></li>
+          <li><a class="pagina3" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <div class="portfolio">About</div>
-    <a href="index.html"><button>About Me</button></a>
-    <a href="contact.html"><button>Contact</button></a>
-    <footer></footer>
-  </body>
+    <h1><span class="auto-input"></span></h1>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: ["Computer languages I am familiar with"],
+        typeSpeed: 65,
+        backSpeed: 50,
+        loop: false,
+      });
+    </script>
+          <div class="about_afbeeldingen">
+            <img src="image/htmllogo2.png" alt="htmllogo" />
+          <div class="tabel">     
+            <table>
+              <tr>
+                <th>Html</th>
+              </tr>
+              <tr>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque velit pariatur adipisci exercitationem, blanditiis
+                  porro et nam sint explicabo cupiditate voluptatem ad, quae
+                  debitis earum neque beatae deserunt quam sapiente.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div> 
+        <div class="tabel">
+          <div class="about_afbeeldingen2">
+            <table>
+              <tr>
+                <th>Css</th>
+              </tr>
+              <tr>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque velit pariatur adipisci exercitationem, blanditiis
+                  porro et nam sint explicabo cupiditate voluptatem ad, quae
+                  debitis earum neque beatae deserunt quam sapiente.
+                </td>
+              </tr>
+            </table>     
+            <img src="image/csslogo.png" alt="csslogo" /></div>
+          </div>
+          <div class="about_afbeeldingen">
+          <img src="image/javalogo.png" alt="javalogo" />
+          <div class="tabel">
+            <table>
+              <tr>
+                <th>Java</th>
+              </tr>
+              <tr>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque velit pariatur adipisci exercitationem, blanditiis
+                  porro et nam sint explicabo cupiditate voluptatem ad, quae
+                  debitis earum neque beatae deserunt quam sapiente.
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- <iframe class="java_video" width="560" height="315" src="https://www.youtube.com/embed/grEKMHGYyns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      </div>
+      <div class="tabel">
+        <div class="about_afbeeldingen2">
+            <table>
+              <tr>
+                <th>Javascript</th>
+              </tr>
+              <tr>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque velit pariatur adipisci exercitationem, blanditiis
+                  porro et nam sint explicabo cupiditate voluptatem ad, quae
+                  debitis earum neque beatae deserunt quam sapiente.
+                </td>
+              </tr>
+            </table>
+          <img src="image/js3.png" alt="javascriptlogo" /></div>
+        </div>
+          <div class="about_afbeeldingen">
+          <img src="image/pythonlogo.png" alt="pythonlogo" />
+          <div class="tabel">
+            <table>
+              <tr>
+                <th>Python</th>
+              </tr>
+              <tr>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque velit pariatur adipisci exercitationem, blanditiis
+                  porro et nam sint explicabo cupiditate voluptatem ad, quae
+                  debitis earum neque beatae deserunt quam sapiente.
+
+                  Zelf ben ik niet zo goed in python. Als u hetzelfde probleem
+                  heeft kunt de onderstaande video bekijken om python voor beginners
+                  te leren.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      <div>
+        <!-- video insert -->
+          <iframe id="video" class="python_video" width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </body>
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="item">
+                <div class="title_footer">
+                <h3 class="home_footer">Home</h3>
+                <h3 class="about_footer">About</h3>
+                <h3 class="contact_footer">Contact</h3>
+              </div>
+              <ul>
+                <li><a class="back_to_homepage" href="#">Back to homepage</a></li>
+                <li><a class="computer_languages" href="#">Computer languages</a></li>
+                <li><a class="contact" href="#">Contact</a></li>
+                <li><a class="video" href="#">Video</a> </li>
+              </ul>
+            </div>
+            </div>
+            <div class="item_social">
+              <p class="copyright">Thijs Heerze © 2022</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </html>
