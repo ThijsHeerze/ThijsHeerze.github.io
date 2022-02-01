@@ -8,63 +8,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Thijs portfolio</title>
   </head>
   <body>
     <header id="top">
       <a href="#top"><div class="backtotop">^</div></a>
       <nav>
-        <h1>Thijs Heerze</h1>
+        <h1 class="mijn_portfolio">Home</h1>
         <ul>
           <li><a class="pagina1" href="index.html">Home</a></li>
-          <li><a class="pagina2" href="about.html">About Me</a></li>
+          <li><a class="pagina2" href="about.html">About</a></li>
           <li><a class="pagina3" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <div id="video"></div>
+    <script src="app.js"></script>
     <div class="portfolio">
-      <h1>Mijn Portfolio</h1>
-      <div class="profielfoto"></div>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit,
-      repudiandae libero fuga ratione doloribus porro, corporis vel numquam, ad
-      quasi amet iste odio eaque distinctio quam deserunt fugit dolor.
-      Explicabo.
-    </div>
-    <!-- <div>
-      <div class="witblok">
-        <table>
-          <tr>
-            <th>Home</th>
-            <th>About me</th>
-            <th>Contact</th>
-          </tr>
-          <tr>
-            <td>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A odit
-              eaque illum repudiandae, eveniet ducimus, unde, harum illo neque
-              quaerat atque quam alias magnam corrupti quod porro recusandae
-              consequuntur tempora!
-            </td>
-            <td>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-              suscipit, distinctio deserunt, quas unde dolore dolor porro quo
-              numquam illum tempora totam veniam eligendi perferendis.
-              Repellendus ullam quas aperiam provident.
-            </td>
-            <td>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloremque velit pariatur adipisci exercitationem, blanditiis
-              porro et nam sint explicabo cupiditate voluptatem ad, quae debitis
-              earum neque beatae deserunt quam sapiente.
-            </td>
-          </tr>
-        </table>
+      <!-- code voor automatische tekst input -->
+      <h1>I'm <span class="auto-input"></span></h1>
+      <div class="profielfoto">
+        <!-- <img src="image/download.jpg" alt="profielfoto" /> -->
       </div>
-    </div> -->
-    <footer>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-      consectetur. Quod placeat voluptatibus ex voluptates natus id officiis, ut
-      earum fugit, similique eaque eius vel suscipit quidem. Quis, odit ullam?
-    </footer>
+      <div class="tekst_box">
+        <p>
+          Mijn naam is Thijs Heerze, ik ben een student. Ik doe de opleiding
+          software developer op roc Technovium in Nijmegen, leerjaar 1. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur
+          tempore laudantium possimus, expedita perspiciatis officiis similique
+          voluptatum quasi consequuntur laborum quidem voluptas laboriosam
+          incidunt facilis sint dicta delectus quisquam!
+        </p>
+        <div>
+          <a class="contact_me" href="Contact me">Contact me</a>
+          <a class="download_cv" href="Download cv">Download cv</a>
+        </div>
+      </div>
+      <!-- <img src="image/htmllogo.png" alt="htmlcode" /> -->
+    </div>
+    <!-- Javascrpit voor automatische tekst input -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: [" Thijs Heerze", " a student", " a software developer"],
+        typeSpeed: 80,
+        backSpeed: 60,
+        loop: true,
+      });
+    </script>
   </body>
+  <div class="footer-clean">
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="item">
+              <div class="title_footer">
+              <h3 class="home_footer">Home</h3>
+              <h3 class="about_footer">About</h3>
+              <h3 class="contact_footer">Contact</h3>
+            </div>
+            <ul>
+              <li><a class="back_to_homepage" href="#">Back to homepage</a></li>
+              <li><a class="computer_languages" href="#">Computer languages</a></li>
+              <li><a class="contact" href="#">Contact</a></li>
+              <li><a class="video" href="#">Video</a> </li>
+            </ul>
+          </div>
+          </div>
+          <div class="item_social">
+            <p class="copyright">Thijs Heerze © 2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </html>
