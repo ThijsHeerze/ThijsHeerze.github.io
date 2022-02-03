@@ -74,6 +74,26 @@ nav ul li a:active {
   color: #b91646;
 }
 
+@media (max-width: 700px) {
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  nav ul {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul li a {
+    font-size: 13px;
+  }
+
+  nav ul {
+    padding-right: 0px;
+  }
+}
+
 .portfolio {
   width: 85%;
   height: auto;
@@ -89,9 +109,10 @@ nav ul li a:active {
 
 @media only screen and (max-width: 500px) {
   .portfolio {
-    width: 95%;
-    padding-left: 5px;
-    margin-left: 5px;
+    width: 85%;
+    height: auto;
+    margin: 7.5%;
+    padding: 35px;
   }
 }
 
@@ -146,7 +167,7 @@ header h2 {
 span.auto-input,
 h1 {
   width: 100%;
-  height: auto;
+  margin: 10px;
 }
 
 .about_auto_input {
@@ -182,7 +203,7 @@ span.auto-input {
 }
 
 table {
-  width: 65%;
+  width: 95%;
   height: auto;
   background-color: rgb(17, 17, 17);
   border-width: 5px;
@@ -204,9 +225,17 @@ td {
   padding: 4px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   table {
-    padding-left: 5px;
+    width: 90%;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  table {
+    width: 92.5%;
+    margin: 10px;
   }
 }
 
@@ -234,7 +263,7 @@ td {
 
 .about_afbeeldingen {
   display: flex;
-  width: 2000px;
+  width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
   box-sizing: border-box;
@@ -246,9 +275,16 @@ td {
   margin-left: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+  .about_afbeeldingen img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .about_afbeeldingen2 {
   display: flex;
-  width: 2000px;
+  width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
   box-sizing: border-box;
@@ -259,15 +295,30 @@ td {
   margin-right: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+  .about_afbeeldingen2 img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .java_video {
   display: flex;
   justify-content: center;
   margin: 0px 100px 100px 450px;
 }
-.python_video {
+
+.video_border {
   display: flex;
-  justify-content: space-between;
-  margin: 0px 100px 100px 450px;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 100px 0px;
+  padding: 0px 30px;
+}
+
+.python_video {
+  border-radius: 10px;
 }
 
 .social_media {
@@ -289,6 +340,42 @@ td {
 }
 .social_media span.auto_input_contact {
   width: 500px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: rgb(17, 17, 17);
+}
+
+input[type="submit"] {
+  background-color: rgb(17, 17, 17);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff0000;
+}
+
+input[type="submit"]:active {
+  background-color: #b91646;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
 }
 
 .footer-clean {
@@ -329,36 +416,25 @@ td {
   justify-content: space-around;
 }
 
-ul li .back_to_homepage,
-.computer_languages,
-.video,
-.contact {
-  float: left;
-}
 .back_to_homepage {
-  margin-left: 165px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 .computer_languages {
-  margin-left: 330px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 .contact {
-  margin-left: 375px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 .video {
-  margin-left: 680px;
-}
-
-@media (max-width: 767px) {
-  .footer-clean .item {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-clean .item.social {
-    text-align: center;
-  }
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 
 .footer-clean .item.social > a {
@@ -377,18 +453,6 @@ ul li .back_to_homepage,
 }
 .footer-clean .item.social > a:hover {
   opacity: 0.9;
-}
-
-@media (max-width: 991px) {
-  .footer-clean .item.social > a {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer-clean .item.social > a {
-    margin-top: 10px;
-  }
 }
 
 .footer-clean .copyright {

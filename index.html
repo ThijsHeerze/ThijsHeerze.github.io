@@ -13,6 +13,7 @@
   <body>
     <header id="top">
       <a href="#top"><div class="backtotop">^</div></a>
+      <div id="back_to_homepage">
       <nav>
         <h1 class="mijn_portfolio">Home</h1>
         <ul>
@@ -26,7 +27,7 @@
     <script src="app.js"></script>
     <div class="portfolio">
       <!-- code voor automatische tekst input -->
-      <h1>I'm <span class="auto-input"></span></h1>
+      <h1 class="input_margin">I'm <span class="auto-input"></span></h1>
       <div class="profielfoto">
         <!-- <img src="image/download.jpg" alt="profielfoto" /> -->
       </div>
@@ -62,26 +63,42 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="item">
-              <div class="title_footer">
-              <h3 class="home_footer">Home</h3>
-              <h3 class="about_footer">About</h3>
-              <h3 class="contact_footer">Contact</h3>
+            <div class="title_footer">
+              <div>
+                <h3 class="home_footer">Home</h3>
+                <ul>
+                  <li>
+                    <a class="back_to_homepage" href="#back_to_homepage"
+                      >Back to homepage</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              </div>
+              <div>
+                <h3 class="about_footer">About</h3>
+                <ul>
+                  <li>
+                    <a class="computer_languages" href="#computer_languagues"
+                      >Computer languages</a
+                    >
+                  </li>
+                  <li><a class="video" href="#video">Video</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="contact_footer">Contact</h3>
+                <ul>
+                  <li><a class="contact" href="#contact_me">Contact me</a></li>
+                </ul>
+              </div>
             </div>
-            <ul>
-              <li><a class="back_to_homepage" href="#">Back to homepage</a></li>
-              <li><a class="computer_languages" href="#">Computer languages</a></li>
-              <li><a class="contact" href="#">Contact</a></li>
-              <li><a class="video" href="#">Video</a> </li>
-            </ul>
           </div>
-          </div>
-          <div class="item_social">
-            <p class="copyright">Thijs Heerze © 2022</p>
-          </div>
+        </div>
+        <div class="item_social">
+          <p class="copyright">Thijs Heerze © 2022</p>
         </div>
       </div>
     </footer>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </html>
