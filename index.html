@@ -13,9 +13,10 @@
   <body>
     <header id="top">
       <a href="#top"><div class="backtotop">^</div></a>
-      <div id="back_to_homepage">
+      <div id="back_to_homepage"></div>
       <nav>
         <h1 class="mijn_portfolio">Home</h1>
+        <h1><span class="auto-input"></span></h1>
         <ul>
           <li><a class="pagina1" href="index.html">Home</a></li>
           <li><a class="pagina2" href="about.html">About</a></li>
@@ -23,40 +24,21 @@
         </ul>
       </nav>
     </header>
-    <div id="video"></div>
-    <script src="app.js"></script>
     <div class="portfolio">
-      <!-- code voor automatische tekst input -->
-      <h1 class="input_margin">I'm <span class="auto-input"></span></h1>
-      <div class="profielfoto">
-        <!-- <img src="image/download.jpg" alt="profielfoto" /> -->
-      </div>
       <div class="tekst_box">
+        <h1 class="mijnportfolio">Mijn portfolio</h1>
         <p>
           Mijn naam is Thijs Heerze, ik ben een student. Ik doe de opleiding
-          software developer op roc Technovium in Nijmegen, leerjaar 1. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur
-          tempore laudantium possimus, expedita perspiciatis officiis similique
-          voluptatum quasi consequuntur laborum quidem voluptas laboriosam
-          incidunt facilis sint dicta delectus quisquam!
+          software developer op roc Technovium in Nijmegen. Ik zit in leerjaar
+          1.
         </p>
         <div>
           <a class="contact_me" href="Contact me">Contact me</a>
           <a class="download_cv" href="Download cv">Download cv</a>
+          <img class="imagehtml" src="image/HTML.jpg" alt="html" />
         </div>
       </div>
-      <!-- <img src="image/htmllogo.png" alt="htmlcode" /> -->
     </div>
-    <!-- Javascrpit voor automatische tekst input -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      var typed = new Typed(".auto-input", {
-        strings: [" Thijs Heerze", " a student", " a software developer"],
-        typeSpeed: 80,
-        backSpeed: 60,
-        loop: true,
-      });
-    </script>
   </body>
   <div class="footer-clean">
     <footer>
@@ -68,28 +50,32 @@
                 <h3 class="home_footer">Home</h3>
                 <ul>
                   <li>
-                    <a class="back_to_homepage" href="#back_to_homepage"
+                    <a class="back_to_homepage" href="index.html"
                       >Back to homepage</a
                     >
                   </li>
                 </ul>
               </div>
-              </div>
               <div>
                 <h3 class="about_footer">About</h3>
                 <ul>
                   <li>
-                    <a class="computer_languages" href="#computer_languagues"
-                      >Computer languages</a
-                    >
+                    <a class="computer_languages" href="about.html"
+                      >Computer languages
+                    </a>
                   </li>
-                  <li><a class="video" href="#video">Video</a></li>
+                  <li><a class="video" href="about.hmtl">Video</a></li>
                 </ul>
               </div>
               <div>
                 <h3 class="contact_footer">Contact</h3>
                 <ul>
-                  <li><a class="contact" href="#contact_me">Contact me</a></li>
+                  <li>
+                    <a class="contact" href="contact.html">Contact me </a>
+                  </li>
+                  <li>
+                    <a class="contact" href="contact.html">Fill in form</a>
+                  </li>
                 </ul>
               </div>
             </div>

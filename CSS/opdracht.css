@@ -9,13 +9,11 @@
 /* Deze code wordt overal toegepast */
 
 body {
-  height: auto;
   background-image: linear-gradient(#474a56, rgb(27, 25, 25), #ff0000);
 }
 
 header {
   width: 100%;
-  height: auto;
   background-color: rgb(17, 17, 17);
   color: #fff;
   position: relative;
@@ -39,7 +37,27 @@ nav .mijn_portfolio {
   border-radius: 6px;
   color: #ff0000;
   padding-bottom: 20px;
+  font-size: 50px;
 }
+
+@media only screen and (max-width: 700px) {
+  nav .mijn_portfolio {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav .mijn_portfolio {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav .mijn_portfolio {
+    font-size: 20px;
+  }
+}
+
 nav {
   display: flex;
   width: 100%;
@@ -74,7 +92,7 @@ nav ul li a:active {
   color: #b91646;
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   nav ul li a {
     font-size: 15px;
   }
@@ -84,7 +102,7 @@ nav ul li a:active {
   }
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   nav ul li a {
     font-size: 13px;
   }
@@ -96,24 +114,89 @@ nav ul li a:active {
 
 .portfolio {
   width: 85%;
-  height: auto;
-  margin: 7.5%;
-  padding: 35px;
+  margin: 5%;
+  padding: 25px;
   border: black solid 2px;
-  border-width: 5px;
+  border-width: 4px;
   border-style: outset;
   background-color: rgb(17, 17, 17);
   box-shadow: #b91646 6px 6px;
-  border-radius: 6px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.imagehtml {
+  width: 400px;
+  height: 175px;
+  display: flex;
+  border-radius: 10px;
+  padding-top: 30px;
+}
+
+.imageright {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .imagehtml {
+    width: 300px;
+    height: 150px;
+    padding-top: 30px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .imagehtml {
+    padding-top: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .imagehtml {
+    width: 200px;
+    height: 125px;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .imagehtml {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mijn_portfolio {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    align-items: below;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .portfolio {
     width: 85%;
-    height: auto;
-    margin: 7.5%;
+    margin: 6%;
     padding: 35px;
   }
+}
+
+.mijnportfolio {
+  margin-left: 0px;
+  margin-bottom: 25px;
 }
 
 .tekst_box {
@@ -159,25 +242,21 @@ nav ul li a:active {
   background-color: #b91646;
 }
 
-header h2 {
+.mijn_portfolio {
   display: flex;
-  justify-content: left;
 }
 
-span.auto-input,
-h1 {
-  width: 100%;
-  margin: 10px;
+span.auto-input h1 {
+  width: 500px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-top: 25px;
 }
 
-.about_auto_input {
-  padding-left: 10px;
-  padding-top: 15px;
-}
-
-.contact_auto_input {
-  padding-left: 10px;
-  padding-top: 15px;
+.typed-cursor {
+  padding-top: 47px;
+  margin: 0;
 }
 
 .profielfoto img {
@@ -194,12 +273,6 @@ h2 {
 
 .auto-input {
   color: #ff0000;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-span.auto-input {
-  justify-content: center;
-  padding-top: 50px;
 }
 
 table {
@@ -258,6 +331,7 @@ td {
 }
 .backtotop:active {
   background-color: #b91646;
+  border-color: black;
   color: black;
 }
 
@@ -312,7 +386,6 @@ td {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: auto;
   margin: 100px 0px;
   padding: 0px 30px;
 }
@@ -321,9 +394,12 @@ td {
   border-radius: 10px;
 }
 
+.social_media .contact_title {
+  padding: 50px;
+}
+
 .social_media {
   width: 75%;
-  height: auto;
   margin: 10%;
   padding: 35px;
   border: black solid 2px;
@@ -379,7 +455,7 @@ input[type="submit"]:active {
 }
 
 .footer-clean {
-  padding: 50px;
+  padding: 40px;
   background-color: rgb(17, 17, 17);
   color: white;
 }
@@ -388,8 +464,23 @@ input[type="submit"]:active {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 1px;
+  padding-right: 10px;
 }
+
+@media only screen and (max-width: 800px) {
+  .footer-clean h3 {
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-clean h3 {
+    padding-right: 2.5px;
+  }
+}
+
 .footer-clean ul {
+  height: 40px;
   list-style: none;
   line-height: 1.6;
   font-size: 14px;
@@ -397,6 +488,7 @@ input[type="submit"]:active {
   flex: 1;
   text-align: center;
 }
+
 .footer-clean ul a {
   color: inherit;
   text-decoration: none;
@@ -409,6 +501,32 @@ input[type="submit"]:active {
 }
 .footer-clean ul a:active {
   color: #b91646;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-clean ul {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .footer-clean ul {
+    font-size: 10px;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .footer-clean ul {
+    font-size: 8px;
+    text-align: left;
+    padding-left: 10px;
+  }
 }
 
 .title_footer {
@@ -437,6 +555,14 @@ input[type="submit"]:active {
   justify-content: left;
 }
 
+@media only screen and (max-width: 510px) {
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .footer-clean .item.social > a {
   font-size: 24px;
   width: 40px;
@@ -461,4 +587,14 @@ input[type="submit"]:active {
   opacity: 0.6;
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .footer-clean li {
+    width: 20px;
+    font-size: 8px;
+    height: 40px;
+    display: flex;
+    align-items: left;
+  }
 }
